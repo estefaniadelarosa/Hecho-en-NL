@@ -7,7 +7,7 @@ body {
     display: grid;
     gap: 6px;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px 310px 150px 760px 125px 170px; /* TAMAÑOS DE: header, carrusel, nav, main, aside, footer. */ 
+    grid-template-rows: 75px auto auto auto auto auto; /* TAMAÑOS DE: header, carrusel, nav, main, aside, footer. */ 
     grid-template-areas:
         "header"
         "carrusel"
@@ -144,6 +144,10 @@ footer {
     grid-area: footer; 
     background: #FE8403;
     display: flex;
-    justify-content: left; 
-    margin-left: -30px;   
+}
+
+footer img {
+    height: 220px;
+    margin-bottom: -50px;
+    margin-left: -38px;   
 }
